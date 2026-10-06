@@ -1,0 +1,11 @@
+$schema: https://api.gitbook.com/gitbook-docs.yaml
+site:
+  title: Passive Acoustic Plant Monitoring
+  structure:
+    - type: space
+      key: passive-acoustic-plant-monitoring
+      title: Passive Acoustic Plant Monitoring
+      path: docs
+      default: true
+      content:
+        directory: ./docs
