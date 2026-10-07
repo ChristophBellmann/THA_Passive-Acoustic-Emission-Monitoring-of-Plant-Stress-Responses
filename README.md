@@ -206,3 +206,21 @@ Das Forschungsdesign umfasst zwei parallele Versuchsstandorte:
 python3 -m venv .venv && source .venv/bin/activate
 make pdf
 ```
+
+## GitBook-Quelle und Pflege
+
+Die [veröffentlichte Projektdokumentation](https://renewable-energy-design.gitbook.io/passive-acoustic-plant-monitoring/) wird per GitSync aus
+`ChristophBellmann/THA_Passive-Acoustic-Emission-Monitoring-of-Plant-Stress-Responses` auf `main` gepflegt. Die Seitentexte liegen in
+[`docs/`](docs/README.md), das Inhaltsverzeichnis in
+[`docs/SUMMARY.md`](docs/SUMMARY.md). `.gitbook.yaml` und
+`gitbook-docs.yaml` verweisen auf denselben Inhaltsordner.
+
+Bei Änderungen an Funktionen, Installation, Architektur, Datenformaten,
+Prüfständen oder Repository-Zuordnungen die betroffenen Seiten im selben
+Arbeitsgang aktualisieren und neue Seiten in `SUMMARY.md` eintragen. Nach
+Commit und Push auf `main` die Veröffentlichung in GitBook prüfen; GitSync
+läuft asynchron. Historische Ergebnisse und geplante Funktionen ausdrücklich
+kennzeichnen. In Thinkthing dokumentieren `docs/gitbooks.md` und
+`EXPERIENCE.md` den gemeinsamen Pflegeablauf;
+`python3 scripts/check_gitbook_sync.py --project plant-monitoring`
+prüft dort den veröffentlichten Text gegen frische GitHub-Quellen.
