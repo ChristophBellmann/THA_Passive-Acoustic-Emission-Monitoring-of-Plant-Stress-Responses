@@ -1,9 +1,19 @@
 # Passive Acoustic Emission Monitoring of Plant Stress Responses
 
-**Ergebnis:** [Paper „Passive Acoustic Emission Monitoring of Plant Stress Responses: System Characterisation and Experimental Validation“ (PDF, im Browser lesbar)](paper/Passive_Acoustic_Emission_Monitoring_of_Plant_Stress_Responses.pdf)
+[**Passive Acoustic Emission Monitoring of Plant Stress Responses: System Characterisation and Experimental Validation**](paper/Passive_Acoustic_Emission_Monitoring_of_Plant_Stress_Responses.pdf)
 – C. Bellmann, J. Hübke, THA Augsburg, Projekt I1, 2026.
 
-[![Erste Seite des Papers](docs/.gitbook/assets/paper-seite-1.png)](paper/Passive_Acoustic_Emission_Monitoring_of_Plant_Stress_Responses.pdf)
+[![Seite 1](docs/.gitbook/assets/paper-seite-1.png)](paper/Passive_Acoustic_Emission_Monitoring_of_Plant_Stress_Responses.pdf)
+
+[![Seite 2](docs/.gitbook/assets/paper-seite-2.png)](paper/Passive_Acoustic_Emission_Monitoring_of_Plant_Stress_Responses.pdf)
+
+[![Seite 3](docs/.gitbook/assets/paper-seite-3.png)](paper/Passive_Acoustic_Emission_Monitoring_of_Plant_Stress_Responses.pdf)
+
+[![Seite 4](docs/.gitbook/assets/paper-seite-4.png)](paper/Passive_Acoustic_Emission_Monitoring_of_Plant_Stress_Responses.pdf)
+
+[![Seite 5](docs/.gitbook/assets/paper-seite-5.png)](paper/Passive_Acoustic_Emission_Monitoring_of_Plant_Stress_Responses.pdf)
+
+[![Seite 6](docs/.gitbook/assets/paper-seite-6.png)](paper/Passive_Acoustic_Emission_Monitoring_of_Plant_Stress_Responses.pdf)
 
 **Dokumentation:** [Handbuch im Browser](https://renewable-energy-design.gitbook.io/renewable-energy-design-docs/uebersicht/passive-acoustic-plant-monitoring/)
 

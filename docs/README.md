@@ -1,10 +1,20 @@
 # Passive Acoustic Monitoring of Plant Stress Responses
 
-## Result: the paper
+## Paper
 
-[**Passive Acoustic Emission Monitoring of Plant Stress Responses: System Characterisation and Experimental Validation**](https://github.com/ChristophBellmann/THA_Passive-Acoustic-Emission-Monitoring-of-Plant-Stress-Responses/blob/main/paper/Passive_Acoustic_Emission_Monitoring_of_Plant_Stress_Responses.pdf) (PDF, opens in the browser) – C. Bellmann, J. Hübke, THA Augsburg, Projekt I1, 2026.
+[**Passive Acoustic Emission Monitoring of Plant Stress Responses: System Characterisation and Experimental Validation**](https://github.com/ChristophBellmann/THA_Passive-Acoustic-Emission-Monitoring-of-Plant-Stress-Responses/blob/main/paper/Passive_Acoustic_Emission_Monitoring_of_Plant_Stress_Responses.pdf) – C. Bellmann, J. Hübke, THA Augsburg, Projekt I1, 2026.
 
-[![First page of the paper](.gitbook/assets/paper-seite-1.png)](https://github.com/ChristophBellmann/THA_Passive-Acoustic-Emission-Monitoring-of-Plant-Stress-Responses/blob/main/paper/Passive_Acoustic_Emission_Monitoring_of_Plant_Stress_Responses.pdf)
+[![Page 1](.gitbook/assets/paper-seite-1.png)](https://github.com/ChristophBellmann/THA_Passive-Acoustic-Emission-Monitoring-of-Plant-Stress-Responses/blob/main/paper/Passive_Acoustic_Emission_Monitoring_of_Plant_Stress_Responses.pdf)
+
+[![Page 2](.gitbook/assets/paper-seite-2.png)](https://github.com/ChristophBellmann/THA_Passive-Acoustic-Emission-Monitoring-of-Plant-Stress-Responses/blob/main/paper/Passive_Acoustic_Emission_Monitoring_of_Plant_Stress_Responses.pdf)
+
+[![Page 3](.gitbook/assets/paper-seite-3.png)](https://github.com/ChristophBellmann/THA_Passive-Acoustic-Emission-Monitoring-of-Plant-Stress-Responses/blob/main/paper/Passive_Acoustic_Emission_Monitoring_of_Plant_Stress_Responses.pdf)
+
+[![Page 4](.gitbook/assets/paper-seite-4.png)](https://github.com/ChristophBellmann/THA_Passive-Acoustic-Emission-Monitoring-of-Plant-Stress-Responses/blob/main/paper/Passive_Acoustic_Emission_Monitoring_of_Plant_Stress_Responses.pdf)
+
+[![Page 5](.gitbook/assets/paper-seite-5.png)](https://github.com/ChristophBellmann/THA_Passive-Acoustic-Emission-Monitoring-of-Plant-Stress-Responses/blob/main/paper/Passive_Acoustic_Emission_Monitoring_of_Plant_Stress_Responses.pdf)
+
+[![Page 6](.gitbook/assets/paper-seite-6.png)](https://github.com/ChristophBellmann/THA_Passive-Acoustic-Emission-Monitoring-of-Plant-Stress-Responses/blob/main/paper/Passive_Acoustic_Emission_Monitoring_of_Plant_Stress_Responses.pdf)
 
 A research and engineering project investigating whether plant-related acoustic emissions can be measured non-invasively and used as feedback for a future **Plant-in-the-Loop** control system.
 
