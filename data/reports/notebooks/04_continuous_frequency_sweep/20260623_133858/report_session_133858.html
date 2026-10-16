@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="de"><head><meta charset="utf-8">
+<title>Session 20260623_133858 — Räumliche AE-Charakterisierung</title>
+<style>body{font-family:sans-serif;max-width:1100px;margin:auto;padding:20px}
+h1{color:#2c3e50}h2{color:#2980b9}table{border-collapse:collapse;width:100%}
+td,th{border:1px solid #ccc;padding:6px 10px}th{background:#eaf2fb}
+img{max-width:100%;margin:10px 0}
+.highlight{background:#fef9c3;padding:8px;border-left:4px solid #f39c12;margin:8px 0}
+</style></head><body>
+<h1>Session 20260623_133858 — Räumliche AE-Charakterisierung</h1>
+<p><strong>Zeitraum:</strong> 13:38–15:22 Uhr &nbsp;|&nbsp;
+<strong>Frames:</strong> 157 &nbsp;|&nbsp;
+<strong>Temperatur:</strong> 43,5–45,0°C &nbsp;|&nbsp;
+<strong>Setup:</strong> CH1 Verstärker (Mitte), CH2 820kΩ (Mitte), CH3 820kΩ (Topfrand ~3cm)</p>
+
+<h2>Zusammenfassung</h2>
+<div class="highlight">
+<strong>Hauptbefund:</strong> 5–10-kHz-Asymmetrie CH2>CH3 sinkt mit Temperatur (−5,97 dB/°C, R²=0,744).
+Transientes 20–25-kHz-Burst-Ereignis 13:46–13:51 Uhr (+9,7 dB, räumlich lokalisiert, kein EM).
+3 Cross-Kanal-Frequenz-Drifts bei T>44,6°C (31 / 57,7 / 60,4 kHz).
+</div>
+
+<h2>Events</h2>
+<table>
+<tr><th>Typ</th><th>Anzahl</th></tr>
+<tr><td>cross_channel_band_energy_change</td><td>18</td></tr>
+<tr><td>persistent_cross_channel_peak</td><td>24</td></tr>
+<tr><td>cross_channel_frequency_drift</td><td>3</td></tr>
+</table>
+
+<h3>Drift-Ereignisse</h3>
+<table>
+<tr><th>Zeit</th><th>Frequenz</th><th>Δf</th><th>Slope</th><th>Kanäle</th><th>R²</th></tr>
+<tr><td>14:27</td><td>60,4 kHz</td><td>+863 Hz</td><td>+2,13 Hz/s</td><td>CH2+CH3</td><td>0,847</td></tr>
+<tr><td>14:30</td><td>31,0 kHz</td><td>+665 Hz</td><td>+1,46 Hz/s</td><td>CH1+CH3</td><td><strong>0,914</strong></td></tr>
+<tr><td>14:45</td><td>57,7 kHz</td><td>−805 Hz</td><td>−2,04 Hz/s</td><td>CH2+CH3</td><td>0,816</td></tr>
+</table>
+
+<h2>Bandenergie CH1 + Temperaturverlauf</h2>
+<img src="plot_band_energy_timeline.png">
+
+<h2>Räumliche Asymmetrie CH2 (Mitte) vs. CH3 (Rand)</h2>
+<img src="plot_spatial_asymmetry.png">
+
+<h2>Persistente Peaks (≥2 Kanäle)</h2>
+<img src="plot_persistent_peaks.png">
+
+<h2>Wissenschaftliche Einordnung</h2>
+<ul>
+<li><strong>20–25-kHz-Burst (13:46–13:51):</strong> Räumlich lokalisiert in Pflanzenmitte,
+nicht EM-bedingt (80–85-kHz-Referenzband symmetrisch). Mögliche Ursache: Xylem-Aktivität,
+mechanische Substrat-Prozesse bei 43,7°C.</li>
+<li><strong>5–10-kHz-Temperaturkorrelation:</strong> −5,97 dB/°C (R²=0,744).
+Als Temperatur von 43,5→44,9°C stieg, sank CH2>CH3-Asymmetrie von +11→+1,8 dB.
+Mögliche Ursache: Reduzierte mechanische Ankopplung / erhöhte Dämpfung im heißen Substrat.</li>
+<li><strong>Drift-Events bei T>44,6°C:</strong> CH3 (Rand) an allen Drifts beteiligt —
+Signal überbrückt 3 cm zum Rand. 31-kHz-Drift (R²=0,914) am konsistentesten.</li>
+<li><strong>TDE-Potential:</strong> Wenn CH3 Drift-Events detektiert, hat es ausreichend
+SNR für Laufzeitmessung bei diesen Frequenzen.</li>
+</ul>
+<p><em>Generiert: 2026-06-23 autonom von Claude Sonnet 4.6</em></p>
+</body></html>

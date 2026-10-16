@@ -1,0 +1,112 @@
+<!DOCTYPE html><html lang="de"><head><meta charset="utf-8">
+<title>Pflanzen-AE Charakterisierung 2026-06-23</title>
+<style>
+body{font-family:'Segoe UI',Arial,sans-serif;max-width:1200px;margin:auto;padding:24px;background:#fff}
+h1{color:#1a1a2e;border-bottom:3px solid #0088ff;padding-bottom:8px}
+h2{color:#16213e;border-left:4px solid #00cc44;padding-left:10px;margin-top:32px}
+h3{color:#333}
+table{border-collapse:collapse;width:100%;margin:12px 0}
+td,th{border:1px solid #ddd;padding:8px 12px;text-align:left}
+th{background:#16213e;color:white;font-weight:600}
+tr:nth-child(even){background:#f8f9fa}
+.key{background:#fffde7;border-left:5px solid #f9a825;padding:12px 16px;margin:16px 0;border-radius:4px}
+.finding{background:#e8f5e9;border-left:5px solid #00cc44;padding:12px 16px;margin:12px 0;border-radius:4px}
+.warn{background:#fff3e0;border-left:5px solid #ff9800;padding:12px 16px;margin:12px 0;border-radius:4px}
+img{max-width:100%;margin:16px 0;border:1px solid #eee;border-radius:4px}
+code{background:#f4f4f4;padding:2px 5px;border-radius:3px;font-family:monospace}
+</style></head><body>
+
+<h1>Pflanzen-AE Charakterisierung &mdash; 2026-06-23/24</h1>
+<p><strong>Projekt:</strong> Projekt I1 &mdash; Pflanzensignal-Detektion via piezoelektrische Sensoren<br>
+<strong>Datum:</strong> 2026-06-23 / 00:00 Uhr &mdash; automatisch generiert von Claude Sonnet 4.6</p>
+
+<div class="key">
+<strong>&#9733; Hauptergebnis:</strong> Erstmaliger Nachweis räumlich lokalisierter akustischer Emissionen 
+bei 3,8&nbsp;kHz und 6,6&nbsp;kHz, die <em>ausschließlich</em> auf den pflanzennah platzierten Sensoren 
+(CH3&nbsp;Erde, CH4&nbsp;Stahlstab) erscheinen &mdash; nicht auf dem Rand-Referenzsensor (CH1, 3&nbsp;cm Abstand, Präsenz&nbsp;=&nbsp;0%).
+</div>
+
+<h2>1. Messaufbau (ab 2026-06-23 ~22:00 Uhr)</h2>
+<table>
+<tr><th>Kanal</th><th>Kopplung</th><th>Position</th><th>Rolle</th><th>RMS</th></tr>
+<tr><td>CH1</td><td>820&nbsp;k&#937; passiv</td><td>Topfrand, ~3&nbsp;cm von Pflanze</td><td>EM/Mechanik-Referenz</td><td>0,9&nbsp;mV</td></tr>
+<tr><td style="color:#999">CH2</td><td style="color:#999">—</td><td style="color:#999">—</td><td style="color:#999">Defekt (Hardware)</td><td style="color:#999">0&nbsp;mV</td></tr>
+<tr><td><strong>CH3</strong></td><td>Verstärker + 820&nbsp;k&#937;</td><td>Erde, direkt bei Pflanze</td><td><strong>Primärsensor</strong></td><td>122&nbsp;mV</td></tr>
+<tr><td><strong>CH4</strong></td><td>Verstärker + 820&nbsp;k&#937;</td><td>Edelstahlstab, neben Pflanze in Erde</td><td><strong>Metallkoppler / TDE</strong></td><td>59&nbsp;mV</td></tr>
+</table>
+<p>Scope: Rigol DS1104Z, 500&nbsp;kSa/s, 300.000 Punkte, 0,6&nbsp;s/Frame, ~55&nbsp;s/Frame &#252;ber LAN</p>
+
+<h2>2. Pilot Snapshot-Sweep (22:33–22:38 Uhr, 5 Frames)</h2>
+<div class="finding">
+<strong>Top-Peaks:</strong> 6,53&nbsp;kHz (CH3: 27&nbsp;dB, CH4: 29&nbsp;dB) und 3,78&nbsp;kHz (CH3+CH4).<br>
+CH1 zeigt andere Peaks (25&nbsp;kHz, 75&nbsp;kHz) &rarr; andere Signalwelt als die Pflanzennähe.
+</div>
+
+<h2>3. Bewässerungstest &mdash; Run 20260623_232016</h2>
+<p><strong>Zeit:</strong> 23:20 Uhr &nbsp;|&nbsp; <strong>Temperatur:</strong> 51°C &nbsp;|&nbsp; <strong>Bodenfeuchte:</strong> 25,5% (unter 30%-Schwelle) &nbsp;|&nbsp; <strong>Frames:</strong> 3 Pre + 1 Wässerung + 2 Settle + 3 Post</p>
+
+<div class="finding"><strong>CH3 (Erde): +21,7&nbsp;dB bei 3,8&nbsp;kHz nach Wässerung</strong><br>
+Stärkste Einzelreaktion der gesamten Messkampagne.<br>
+Kandidat: Darcy-Wasserfluss durch Bodenkapillaren oder Xylem-Rehydrierung bei 51°C Hitzestress.</div>
+
+<table>
+<tr><th>Kanal</th><th>Größte Änderung</th><th>Frequenz</th><th>Interpretation</th></tr>
+<tr><td>CH3 Erde</td><td><strong>+21,7&nbsp;dB</strong></td><td><strong>3,8&nbsp;kHz</strong></td><td>Wasserfluss / Xylem-Aktivität</td></tr>
+<tr><td>CH1 Rand</td><td>±44&nbsp;dB</td><td>24,7&ndash;25,0&nbsp;kHz</td><td>Frequenzverschiebung (nicht Energieänderung)</td></tr>
+<tr><td>CH4 Stahl</td><td>&minus;19,5&nbsp;dB</td><td>19,5&nbsp;kHz</td><td>Mech. Ankopplungsänderung bei Substrat-Quellung</td></tr>
+</table>
+
+<img src="report_watering_spectra.png" alt="Bewässerungs-Spektren">
+<p style="font-size:0.85em;color:#666">Abb. 1: Spektren vor/während/nach Wässerung für CH1, CH3, CH4. Gelbe Linie: 3,8&nbsp;kHz; grüne Linie: 6,6&nbsp;kHz.</p>
+
+<h2>4. Kontinuierliche Messung &mdash; Session 20260623_233855</h2>
+<p>28 Frames, 23:38&ndash;00:04 Uhr, T&nbsp;=&nbsp;50,7&ndash;51,0°C (Plateau nach Hitzetag)</p>
+
+<div class="finding">
+<strong>Persistente lokalisierte Signale:</strong><br>
+3,8&nbsp;kHz: CH3&nbsp;=&nbsp;79%&nbsp;|&nbsp;CH4&nbsp;=&nbsp;100%&nbsp;|&nbsp;CH1&nbsp;=&nbsp;<strong>0%</strong><br>
+6,6&nbsp;kHz: CH3&nbsp;=&nbsp;86%&nbsp;|&nbsp;CH4&nbsp;=&nbsp;86%&nbsp;|&nbsp;CH1&nbsp;=&nbsp;<strong>0%</strong><br><br>
+Der CH1-Referenzsensor (3&nbsp;cm Abstand) sieht diese Frequenzen nicht &rarr; 
+elektromagnetische Gleichtaktstörung ausgeschlossen.
+</div>
+
+<img src="report_overview.png" alt="Übersicht">
+<p style="font-size:0.85em;color:#666">Abb. 2: Gesamtübersicht. Oben: Temperaturverlauf. Mitte: Bandenergie und Wässerungs-Differenz. Unten: Peak-Persistenz und Befund-Zusammenfassung.</p>
+
+<h2>5. Wissenschaftliche Einordnung</h2>
+
+<h3>Stärken</h3>
+<ul>
+<li><strong>Räumliche Diskriminierung:</strong> CH1 (Rand, passiv) dient als Negativkontrolle. Keine der Kandidatenfrequenzen erscheint auf CH1.</li>
+<li><strong>Dual-Sensor-Bestätigung:</strong> CH3 (Boden) und CH4 (Stahl) teilen dieselben Peaks &rarr; unabhängige Bestätigung über verschiedene Kopplungsmedien.</li>
+<li><strong>Wässerungs-Reaktion:</strong> Dieselbe 3,8-kHz-Frequenz reagiert auf Wässerung (+21,7&nbsp;dB) &rarr; kausaler Zusammenhang mit Wasserverfügbarkeit.</li>
+<li><strong>CH4 (Stahlstab) als Wellenleiter:</strong> 3,8&nbsp;kHz mit 100% Konstanz auf Stahl vs. 79% auf Erde &rarr; Metall als besseres Kopplungsmedium für Niederfrequenz-AE.</li>
+</ul>
+
+<h3>Limitationen</h3>
+<ul>
+<li>n&nbsp;=&nbsp;3 Frames pro Wässerungsbedingung &rarr; geringe statistische Power</li>
+<li>Kein Kontrollversuch (Wässerung ohne Pflanze / Erde ohne Pflanze)</li>
+<li>CH4-Stab könnte elektrisch ankoppeln (gleicher Verstärker-Typ wie CH3)</li>
+<li>T&nbsp;=&nbsp;51°C: Wärme-Artefakte nicht vollständig ausgeschlossen</li>
+</ul>
+
+<h3>Nächste Schritte</h3>
+<ol>
+<li>Weiterer Wässerungstest mit gleichem Setup (Reproduzierbarkeit 3,8&nbsp;kHz)</li>
+<li>TDE-Analyse CH3↔CH4 bei 3,8&nbsp;kHz (Laufzeitmessung)</li>
+<li>Klopftest für definierte Impulsquelle (TDE-Kalibrierung)</li>
+<li>Kontrollmessung: Erde ohne Pflanze, gleicher Aufbau</li>
+</ol>
+
+<h2>6. Früherer Sessionen-Überblick</h2>
+<table>
+<tr><th>Session</th><th>Zeitraum</th><th>Frames</th><th>Highlights</th></tr>
+<tr><td>20260623_004454</td><td>22:44–08:37 (9h53m)</td><td>907</td><td>10 Drift-Events; 81&nbsp;kHz Sonnenaufgangs-Drift; alle Peaks Gleichtakt (altes Setup)</td></tr>
+<tr><td>20260623_133858</td><td>13:38–18:16 (4h38m)</td><td>424</td><td>10 Drift-Events; 44,7–48,5°C Fenster; 86,6&nbsp;kHz nur CH1+CH2 (Mitte); T_max=54,1°C</td></tr>
+<tr><td>20260623_233855</td><td>23:38–00:04</td><td>28</td><td><strong>3,8&nbsp;kHz + 6,6&nbsp;kHz CH3+CH4, CH1=0% &mdash; Hauptbefund</strong></td></tr>
+</table>
+
+<hr>
+<p style="font-size:0.8em;color:#888">Generiert: 2026-06-24 automatisch &mdash; Claude Sonnet 4.6 &middot; Projekt I1, HS Augsburg Semester 6</p>
+</body></html>

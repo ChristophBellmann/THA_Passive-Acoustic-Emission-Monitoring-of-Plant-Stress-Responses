@@ -1,0 +1,4 @@
+{"timestamp_utc": "2026-06-22T17:26:33.698597+00:00", "event": "light_phase_changed", "light_phase": "day"}
+{"timestamp_utc": "2026-06-22T17:26:33.698874+00:00", "event": "experiment_started"}
+{"timestamp_utc": "2026-06-22T17:26:37.756932+00:00", "event": "oscilloscope_connected", "settings": {"profile": "deep_memory_500k", "sample_rate_hz": 500000.0, "memory_depth": 300000, "horizontal_scale_s_per_div": 0.05, "capture_duration_s": 0.6, "frequency_resolution_hz": 1.6666666666666667, "nyquist_hz": 250000.0, "trigger_mode": "EDGE", "trigger_source": "CHAN1", "trigger_level_v": 0.02}}
+{"timestamp_utc": "2026-06-22T17:27:17.201094+00:00", "event": "psd_snapshot_saved", "sequence": 0, "n_frames_averaged": 1, "path": "/media/christoph/some_space/Nextcloud/hs-augsburg/Semester_6/Projekt_I1/projekt_i1/src/characterization/data/continuous_plant_ae_20260622/20260622_192633/psd_snapshots/psd_snapshot_2026-06-22T17-27-16_seq000000.npz"}

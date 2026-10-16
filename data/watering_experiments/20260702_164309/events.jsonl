@@ -1,0 +1,2 @@
+{"timestamp_utc": "2026-07-02T14:43:09.341894+00:00", "timestamp_local": "2026-07-02T16:43:09.341899+02:00", "type": "watering_experiment_start", "experiment_id": "20260702_164309", "n_pre": 5, "n_post": 10, "authorization": "user_standing_permission_2026-06-26"}
+{"timestamp_utc": "2026-07-02T14:45:29.499236+00:00", "type": "nb04_restarted"}
