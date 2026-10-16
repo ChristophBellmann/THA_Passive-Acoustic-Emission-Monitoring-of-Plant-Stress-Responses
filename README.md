@@ -1,6 +1,11 @@
-# scope - Oscilloscope Vibration Characterization
+# Passive Acoustic Emission Monitoring of Plant Stress Responses
 
-**Dokumentation:** [Handbuch](https://renewable-energy-design.gitbook.io/renewable-energy-design-docs/uebersicht/passive-acoustic-plant-monitoring/)
+**Ergebnis:** [Paper „Passive Acoustic Emission Monitoring of Plant Stress Responses: System Characterisation and Experimental Validation“ (PDF, im Browser lesbar)](paper/Passive_Acoustic_Emission_Monitoring_of_Plant_Stress_Responses.pdf)
+– C. Bellmann, J. Hübke, THA Augsburg, Projekt I1, 2026.
+
+[![Erste Seite des Papers](docs/.gitbook/assets/paper-seite-1.png)](paper/Passive_Acoustic_Emission_Monitoring_of_Plant_Stress_Responses.pdf)
+
+**Dokumentation:** [Handbuch im Browser](https://renewable-energy-design.gitbook.io/renewable-energy-design-docs/uebersicht/passive-acoustic-plant-monitoring/)
 
 Messsoftware, Daten und Auswertung des Projekts „Passive Acoustic Emission
 Monitoring of Plant Stress Responses“ (Projekt I1, THA). Neben dem
@@ -12,6 +17,8 @@ Charakterisierungswerkzeug im Repository-Root liegen:
 Rohmessdaten unter `data/` liegen in Git LFS (rund 3,6 GB). Ohne Daten klonen:
 `GIT_LFS_SKIP_SMUDGE=1 git clone …`, einzelne Messungen später mit
 `git lfs pull --include "data/<Messung>/**"` holen.
+
+## scope – Oscilloscope Vibration Characterization
 
 Scientific, config-driven Python tool for characterizing vibrations measured with a
 Rigol DS1104Z oscilloscope. Acquires waveforms from piezo and MEMS sensors, performs spectral
@@ -156,3 +163,7 @@ kennzeichnen. In Thinkthing dokumentieren `docs/gitbooks.md` und
 `EXPERIENCE.md` den gemeinsamen Pflegeablauf;
 `python3 scripts/check_gitbook_sync.py --project plant-monitoring`
 prüft dort den veröffentlichten Text gegen frische GitHub-Quellen.
+
+## Lizenz
+
+Die Software steht unter der [MIT-Lizenz](LICENSE).
